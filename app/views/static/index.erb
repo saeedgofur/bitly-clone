@@ -1,2 +1,56 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+ <h1>bitly</h1>
+ <br>
+<!-- /*########################################################*/ -->
+ 
+ <ul>
+	  <li><a href='/'> <div class='logo'> <img src="https://camo.githubusercontent.com/a57f1f8028227c567991d966ed2176ef80ec18bc/687474703a2f2f6e73712e696f2f7374617469632f696d672f6269746c795f6c6f676f2e706e67"> </div></a></li>
+
+	  <li><a href='/about_us'>About Us</a></li>
+ </ul>
+<br>
+<!-- /*########################################################*/ -->
+<br>
+<br>
+<br>
+
+ <form action='/urls' method='post'>
+
+ 	<div class='enter_url'> Enter URL (if it does not appear, it has already been inputted): </div>
+ 	<input type="text" name="long_url" placeholder="Type url here">
+ 	<input type="submit" value="Shorten">
+
+ </form>
+
+<!-- /*########################################################*/ -->
+
+
+<div class="list_heading"> <h2>Here are all your urls</h2> </div>
+
+<!-- /*########################################################*/ -->
+
+<div class="table-responsive">
+<table class="table">
+ <% Url.all.each do |p| %>
+    <tr>
+	  <td><h5><a href="<%= p.long_url %>"><%= p.long_url %></a></h5></td>
+
+	  <td><h4><a href="/<%= p.shortened_url %>">https://gofurly/<%= p.shortened_url %></a></h4></td>
+ 	</tr>
+ <% end %>
+</table>
+</div>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+

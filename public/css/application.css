@@ -1,0 +1,110 @@
+body {
+	background: url(https://i.pinimg.com/originals/b1/4d/f1/b14df134024e7ed0a98b8a535e3045bc.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+
+}
+
+
+
+.box{
+	margin: 0 auto;
+    width: 80em;
+    height: 60em;
+    overflow: hidden ;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+
+h1 {
+	font-family: 'Leckerli One', cursive;
+	color: rgb(201, 201, 201);
+	font-weight: bold;
+	font-size: 70px;
+}
+
+.enter_url{
+
+	font-family: 'Gloria Hallelujah', cursive;
+	color: rgb(178, 180, 183)
+
+}
+
+.list_heading {
+	font-family: 'Gloria Hallelujah', cursive;
+	color: rgb(178, 180, 183);
+}
+
+.message {
+	font-family: 'Leckerli One', cursive;
+	color: rgb(178, 180, 183);
+}
+
+.table-responsive {
+	color: white;
+}
+/*########################################################*/
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:  rgb(78, 78, 79);
+}
+
+
+li a {
+    display: block;
+    width: 100px;
+}
+
+li {
+    float: left;
+}
+
+li >a {
+    display: block;
+    padding: 8px;
+    background-color: rgb(78, 78, 79);
+}
+
+li {
+    border-right: 0.5px solid rgb(82, 82, 82);
+    border-left: 0.5px solid rgb(82, 82, 82);
+}
+
+
+/*########################################################*/
+.logo img{
+    width: 80px;
+    height: 20px;
+}
+
+/*########################################################*/
+/*########################################################*/
+.word_marketers{
+	font-weight: bold;
+	text-decoration: underline;
+	
+}
+
+.word_customer{
+	font-weight: bold;
+	text-decoration: underline;
+	
+}
+
+.see_more{
+	text-decoration: underline;
+}
+
+#abt{
+	font-size: 17pt;
+	font-family: 'Indie Flower', cursive;
+	display: none;
+	color: white;
+}

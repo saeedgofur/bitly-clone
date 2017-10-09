@@ -1,8 +1,46 @@
 <html>
+
+
 	<head>
 		<title>Sinatra Framework</title>
+    <!-- https://www.bootstrapcdn.com/ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- ############################################ -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- ############################################ -->
+
+	<link rel="stylesheet" href="css/application.css/?v=2.2">
+
+<!-- ############################################ -->
+
+	<link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+
+<!-- ############################################ -->
+
+	<script src="/js/application.js"></script>
+
 	</head>
+
+<!-- ############################################ -->
+<!-- ############################################ -->
+
+
 	<body>
-		<%= yield %>
+	<div class='box'>
+		<div class="main">
+		    <%= @errors if @errors %>
+		   <!-- PUT SOME ERROR STUFF HERE -->
+			<%= yield %>
+		</div>
+	</div>
 	</body>
 </html>
